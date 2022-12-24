@@ -1,0 +1,129 @@
+:root {
+    --clr-primary-900: hsl(218, 44%, 22%);
+    --clr-secondary-300: hsl(220, 15%, 55%);
+
+    --clr-neutral-100: hsl(0, 0%, 100%);
+    --clr-neutral-300: hsl(212, 45%, 89%);
+
+    --ff-body: 'Outfit', sans-serif;
+
+    --fw-regular: 400;
+    --fw-bold: 700;
+}
+
+/*   RESET
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/*
+    2. Remove default margin
+  */
+* {
+    margin: 0;
+}
+
+/*
+    3. Allow percentage-based heights in the application
+  */
+html,
+body {
+    height: 100%;
+}
+
+/*
+    Typographic tweaks!
+    4. Add accessible line-height
+    5. Improve text rendering
+  */
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+/*
+    6. Improve media defaults
+  */
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+/*
+    7. Remove built-in form typography styles
+  */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/*
+    8. Avoid text overflows
+  */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+/* general styling */
+
+body {
+    font-family: var(--ff-body);
+    font-weight: var(--fw-regular);
+    font-size: 0.87rem;
+    color: var(--clr-primary-900);
+    background-color: var(--clr-neutral-300);
+    /* for this project only */
+    display: grid;
+    place-content: center;
+    margin: 3rem;
+    
+}
+
+/* QR content styling */
+.QR-code {
+    background-color: var(--clr-neutral-100);
+    border-radius: 1.5rem;
+    padding: 1rem;
+    overflow: hidden;
+    text-align: center;
+    width: 300px;
+    height: 460px;
+    
+}
+
+.QR-code__img {
+    border-radius: 0.5rem;
+}
+
+.QR-code__content {
+    
+
+}
+
+.QR-code__title {
+    line-height: 1.75rem;
+    padding-top: 1.2rem;
+}
+
+.QR-code__description {
+    font-size: 0.925rem;
+    line-height: 1.1rem;
+    padding: 1rem 0.9rem;
+    color: var(--clr-secondary-300);
+}
